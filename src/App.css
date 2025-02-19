@@ -1,0 +1,75 @@
+
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    height: 80px;
+}
+
+.navbar{
+    background-color: #96b0f1;
+}
+
+.icon{
+    font-size: 28px !important;
+    color: rgba(0, 0, 0, 0.719) !important;
+}
+.navItems{
+    font-size: 22px !important;
+    color: rgba(0, 0, 0, 0.719) !important;
+}
+
+/* Hero Section */
+.hero-section{
+    background-image: url("../src/images/kailash-at-night.png");
+    /* height: 80vh; */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #020a1f3d;
+}
+
+.hero-heading{
+    font-size: 70px;
+    font-weight: 800;
+    color: #fe7507;
+    text-align: center;
+}
+
+.hero-text{
+    text-align: center;
+    color: white;
+    width: 70%;
+    font-size: 22px;
+}
+
+.about{
+    background-color: #96b0f1;
+}
+
+.carousel-image{
+    height: 500px;
+}
+
+/* Footer Styles */
+ .footer-section{
+    background-color: rgb(31, 118, 176);
+    color: white;
+ }
+
+ .footer-section a{
+    color: white;
+    text-decoration: none;
+ }
