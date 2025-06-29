@@ -1,66 +1,112 @@
-
 *{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .logo{
     height: 80px;
+    cursor: pointer;
 }
 
-.navbar{
-    background-color: #96b0f1;
-}
-
-.icon{
-    font-size: 28px !important;
-    color: rgba(0, 0, 0, 0.719) !important;
-}
-.navItems{
-    font-size: 22px !important;
-    color: rgba(0, 0, 0, 0.719) !important;
+.icon:hover, .navItems:hover {
+    color: #898AC4 !important;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
 /* Hero Section */
-.hero-section{
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-image: url("../src/images/kailash-at-night.png");
-    /* height: 80vh; */
-    width: 100%;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
+    color: #fff;
 }
 
-.hero-overlay{
+.hero-content {
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
-    background-color: #020a1f3d;
 }
 
 .hero-heading{
-    font-size: 70px;
-    font-weight: 800;
     color: #fe7507;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero-text{
     text-align: center;
     color: white;
-    width: 70%;
-    font-size: 22px;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-button:hover {
+    transform: scale(1.05);
 }
 
 .about{
-    background-color: #96b0f1;
+    background-color: #ffffff;
 }
 
-.carousel-image{
+.carousel img {
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-caption h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.centered-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .centered-section .text-content {
+    width: 40%;
+    text-align: center;
+  }
+  
+  .centered-section img {
     height: 500px;
+  }
+
+  .cards-section{
+    background-image: url("../src/images/img1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .cards-section .card{
+    background-color: "#f8f9fa";
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;}
+.cards-section .card:hover {
+    transform: translateY(-10px);
 }
 
 /* Footer Styles */
@@ -70,6 +116,84 @@
  }
 
  .footer-section a{
-    color: white;
+    color: #276bab;
     text-decoration: none;
  }
+
+ .footer-section a:hover{
+    color: #898AC4 !important;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+ }
+
+ /* GALLERY */
+.gallery-heading{
+    margin-top: 100px;
+}
+
+ .gallery-grid{
+    margin: auto;
+ }
+ .gallery-grid .col .row img{
+    width: 100px;
+ }
+
+ /* Grid Section */
+.grid-section {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-item{
+    background-color: #f8f9fa;
+    position:relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.grid-item img{
+    border-radius: 10px;
+    height: 100%;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+.grid-item-1 {
+    grid-row: 1 / 6;
+}
+
+.grid-item-2 {
+    grid-row: 1 / 3;
+}
+
+.grid-item-3 {
+    grid-row: 1 / 4;
+}
+
+.grid-item-4 {
+    grid-row: 1 / 6;
+}
+
+.grid-item-5 {
+    grid-row: 3 / 6;
+}
+
+.grid-item-6 {
+    grid-row: 4 / 6;
+}
+
+.grid-text{
+     position:absolute;
+     font-weight: bold;
+     font-size: 24px;
+     bottom: 1px;
+     color: white;
+     
+    
+     
+}
